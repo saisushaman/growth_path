@@ -2,13 +2,11 @@
 **Empathy meets AI for personal transformation.**  
 GrowthPath helps users overcome social anxiety, build habits, stop procrastination, and connect with goal-aligned friends through **AI coaching**, **gamification**, and **community engagement**.
 
----
 
 ## 🧭 Overview  
 GrowthPath is a web app that promotes personal growth through **AI-guided micro-tasks**, **empathetic coaching**, and **social connection**.  
 Built with **React + TypeScript + Tailwind CSS**, it focuses on emotional intelligence, behavior tracking, and consistent progress.
 
----
 
 ## ✨ Core Features  
 
@@ -21,7 +19,6 @@ Built with **React + TypeScript + Tailwind CSS**, it focuses on emotional intell
 - 📱 **Screen Time Analysis** – AI recommendations for healthy balance.  
 - 🌬️ **Panic Support** – Breathing exercises and crisis resources.  
 
----
 
 ## 🎨 Design Highlights  
 
@@ -31,7 +28,6 @@ Built with **React + TypeScript + Tailwind CSS**, it focuses on emotional intell
 - **Voice input simulation** for accessibility.  
 - Gamified elements like **confetti** and **progress animations**.
 
----
 
 ## 🤖 AI Integration  
 
@@ -51,7 +47,7 @@ GrowthPath uses **Hugging Face free models** (e.g., *flan-t5*, *gpt2*) for all A
 - **Personalized Coaching**: References user's "why" statement and goals
 - **Conversation Memory**: Maintains context throughout the chat
 - **Fallback System**: Graceful degradation when APIs are unavailable
-- 
+  
 
 ## 🧠 AI Micro-Task Generation Process  
 
@@ -64,6 +60,7 @@ GrowthPath uses **Hugging Face free models** (e.g., *flan-t5*, *gpt2*) for all A
 | **5. Personalization** | AI adapts based on user progress and feedback from `localStorage`. |
 | **6. Empathy Layer** | Encouraging tone motivates the user after each suggestion. |
 
+
 **Example:**  
 **Input:** “Become confident in public speaking.”  
 **Output:**  
@@ -71,7 +68,6 @@ GrowthPath uses **Hugging Face free models** (e.g., *flan-t5*, *gpt2*) for all A
 2. Record a 1-minute talk.  
 3. Compliment someone each day.  
 
----
 
 ## 💞 Friend Matching Algorithm  
 
@@ -83,9 +79,6 @@ GrowthPath uses **Hugging Face free models** (e.g., *flan-t5*, *gpt2*) for all A
 | **Matching Logic** | Uses cosine similarity for compatibility. |
 | **Output** | >0.9 = Perfect Match, >0.7 = Good Match, else Suggested. |
 
-Users swipe through compatible matches and connect through the **community feed**.
-
----
 
 ## 🧩 Gamification System  
 
@@ -94,7 +87,7 @@ Users swipe through compatible matches and connect through the **community feed*
 - **Confetti celebrations** for milestones.  
 - **Coupons** unlock at 200 points.  
 
----
+
 
 ## 🚀 Getting Started
 
@@ -199,6 +192,5 @@ Deployed our website in vercel : https://vercel.com/sushamas-projects/growth-pat
 - Designed for accessibility and user experience
 - Ready for hackathon submission and further development
 
----
 
 **Built with ❤️ for personal growth and community connection**
