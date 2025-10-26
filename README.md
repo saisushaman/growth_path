@@ -1,7 +1,6 @@
 # 🌱 GrowthPath — AI-Powered Personal Growth Platform  
-
-> **Empathy meets AI for personal transformation.**  
-> GrowthPath helps users overcome social anxiety, build habits, stop procrastination, and connect with goal-aligned friends through **AI coaching**, **gamification**, and **community engagement**.
+**Empathy meets AI for personal transformation.**  
+GrowthPath helps users overcome social anxiety, build habits, stop procrastination, and connect with goal-aligned friends through **AI coaching**, **gamification**, and **community engagement**.
 
 ---
 
