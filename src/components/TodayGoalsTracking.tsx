@@ -41,6 +41,9 @@ const TodayGoalsTracking: React.FC = () => {
   ): Promise<TodayGoal[]> => {
     const aiService = AIService.getInstance();
     const baseGoal = goalText;
+
+    // Retrieve RAG context (similar example goals and their micro-tasks)
+    const ragContext = await aiService.getMicroTaskRAGContext(baseGoal);
     
     // Calculate days from time horizon
     const timeHorizonMap: { [key: string]: number } = {
@@ -52,7 +55,15 @@ const TodayGoalsTracking: React.FC = () => {
     };
     const totalDays = timeHorizonMap[timeHorizon] || 30;
     
-    const prompt = `Create exactly 5 specific, actionable micro-tasks to break down this goal into small steps:
+    const prompt = `You are an expert at turning goals into short, concrete micro-tasks that can be done in 5–30 minutes.
+
+User goal:
+${baseGoal}
+
+Available context from similar goals and their micro-tasks:
+${ragContext || 'No examples available; rely on your own reasoning.'}
+
+Now create exactly 5 specific, actionable micro-tasks to break down this goal into small steps:
 
 Goal: ${baseGoal}
 Type: ${goalType}

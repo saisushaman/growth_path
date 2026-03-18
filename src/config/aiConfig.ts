@@ -4,11 +4,13 @@ export const AI_CONFIG = {
   MISTRAL_API_KEY: process.env.REACT_APP_MISTRAL_API_KEY || null,
   OPENAI_API_KEY: process.env.REACT_APP_OPENAI_API_KEY || null,
   HUGGINGFACE_API_KEY: process.env.REACT_APP_HUGGINGFACE_API_KEY || null,
+  GOOGLE_API_KEY: process.env.REACT_APP_GOOGLE_API_KEY || null,
   
   // API Endpoints
   MISTRAL_API_URL: 'https://api.mistral.ai/v1/chat/completions',
   OPENAI_API_URL: 'https://api.openai.com/v1/chat/completions',
   HUGGINGFACE_API_URL: 'https://api-inference.huggingface.co/models',
+  GOOGLE_API_URL: 'https://generativelanguage.googleapis.com/v1beta',
   
   // Mistral Models (Primary choice)
   MISTRAL_MODELS: {
@@ -35,6 +37,7 @@ export const AI_CONFIG = {
   // Model configurations
   MISTRAL_MODEL: 'mistral-small-latest', // Default Mistral model
   OPENAI_MODEL: 'gpt-4',
+  GOOGLE_GEMINI_MODEL: 'models/gemini-1.5-flash',
   
   // Response settings
   MAX_TOKENS: 500,
