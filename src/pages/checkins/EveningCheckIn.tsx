@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 
 const EveningCheckIn: React.FC = () => {
   const navigate = useNavigate();
-  const { user, addCheckIn, addPoints } = useUser();
+  const { addCheckIn, addPoints } = useUser();
   const [habitCompleted, setHabitCompleted] = useState<string>('');
   const [bestMoment, setBestMoment] = useState('');
   const [socialQuality, setSocialQuality] = useState<number>(5);

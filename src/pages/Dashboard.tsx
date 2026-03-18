@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useUser } from '../contexts/UserContext';
-import { Users, Trophy, Zap, Calendar, Smartphone, Target, LogOut, Gift, Database, Edit2, Check, X, PieChart, Sparkles } from 'lucide-react';
+import { Users, Trophy, Zap, Calendar, Smartphone, LogOut, Gift, Database, Edit2, Check, X, PieChart, Sparkles } from 'lucide-react';
 import TodayGoalsTracking from '../components/TodayGoalsTracking';
 import PhoneUsageTracker from '../components/PhoneUsageTracker';
 import { initializeMockData } from '../utils/mockData';
@@ -65,48 +65,6 @@ const Dashboard: React.FC = () => {
     navigate('/');
     return null;
   }
-
-  const completedTasksToday = habits.filter(h => h.completed).length;
-  const totalTasks = habits.length || 5;
-
-  const quickActions = [
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: 'AI Mentor',
-      subtitle: 'Empathetic coaching',
-      color: 'from-purple-500 to-pink-500',
-      onClick: () => navigate('/ai-chat')
-    },
-    {
-      icon: <Trophy className="w-6 h-6" />,
-      title: 'Leaderboard',
-      subtitle: `You're #${user.rank} globally`,
-      color: 'from-amber-500 to-orange-600',
-      onClick: () => navigate('/leaderboard')
-    },
-    {
-      icon: <Calendar className="w-6 h-6" />,
-      title: 'Live Events',
-      subtitle: '3 happening now',
-      color: 'from-red-500 to-red-600',
-      onClick: () => navigate('/events')
-    },
-    {
-      icon: <Smartphone className="w-6 h-6" />,
-      title: 'Screen Time',
-      subtitle: '-25% vs last week',
-      color: 'from-orange-500 to-orange-600',
-      onClick: () => navigate('/screentime')
-    }
-  ];
-
-  const todaysHabit = habits.find(h => !h.completed) || {
-    id: 1,
-    description: 'Make eye contact with one person during a conversation',
-    completed: false,
-    streak: 5,
-    category: 'social'
-  };
 
   return (
     <div className="min-h-screen gradient-bg px-6 py-8">

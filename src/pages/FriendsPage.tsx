@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useUser } from '../contexts/UserContext';
-import { ArrowLeft, Users, UserPlus, Target, MessageCircle, Heart, X } from 'lucide-react';
+import { ArrowLeft, Users, UserPlus, Target, MessageCircle, Heart } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 interface Friend {

@@ -55,7 +55,7 @@ const PanicSupport: React.FC = () => {
     return () => {
       if (interval) clearTimeout(interval);
     };
-  }, [isBreathing, breathCount]);
+  }, [isBreathing, breathCount, breathingCycle]);
 
   const startBreathing = () => {
     setIsBreathing(true);
